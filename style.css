@@ -3,6 +3,12 @@ body{
     background-color: black;
 }
 
+main{
+    display: flex;
+    align-items:ce;
+
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -12,6 +18,9 @@ body{
     width: 450px;
     height: 450px;
     background-color: red;
+    animation-name: icon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 } 
 
 .gmother{
@@ -35,7 +44,20 @@ body{
 }
 
 /* .product{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: white;
+    margin: auto;
+    
 } */
+
+@keyframes icon{
+    
+    50%{
+        margin-top:80px;
+    }
+    100%{
+        margin-top: 100px;
+    }
+    
+}
