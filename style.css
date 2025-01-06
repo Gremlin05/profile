@@ -19,7 +19,7 @@ main{
     height: 450px;
     background-color: red;
     animation-name: icon;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
 } 
 
@@ -54,10 +54,10 @@ main{
 @keyframes icon{
     
     50%{
-        margin-top:80px;
+        rotate: 1deg;
     }
     100%{
-        margin-top: 100px;
+        rotate: -1deg;
     }
     
 }
