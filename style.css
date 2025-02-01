@@ -1,16 +1,23 @@
 :root{
-    --font-family: ;
     --main-color:#F1F1C6;
     --button-color:#e03f8c;
     --background-grad-color: #973150;
     --adress-color:#b0b0b0;
     --link-color: white;
+    --margin:1rem;
+    --border-radius: 4.3rem;
+    --profile-card-width:34rem;
+    --profile-card-height:44.7;
 }
 
 @font-face {
     font-family: "Roboto Flex";
     src: url(./fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
     src: url(./fonts/Roboto_Flex/static/RobotoFlex-Regular.ttf);
+}
+
+html{
+    font-size: 15px;
 }
 
 body{
@@ -27,15 +34,16 @@ h1,p {
 .profile-card{    
     background-image: url(./img/grad.svg);
     background-repeat: no-repeat;
+    background-size: 35rem;
     margin: auto;
-    margin-top: 15px;
+    margin-top: var(--margin);
     background-color: white;
-    width: 510px;
-    height: 670px;
+    width: var(--profile-card-width);
+    height: var(--profile-card-height);
 }
 
 .container{
-    border-radius: 11%;
+    border-radius:var(--border-radius);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -48,8 +56,8 @@ h1,p {
 .icon-box{
     margin-top: 35px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
     background-image: url(./img/0x1900-000000-80-0-0.jpg);
     background-position: center;
     background-size: 175px;
@@ -63,13 +71,13 @@ h1,p {
 
 .profile-adress{
     color: var(--adress-color);
-    margin-bottom: 15px;
+    margin-bottom: var(--margin);
 }
 
 .profile-description-box.container{
-    width: 350px;
+    width: 26rem;
     text-align: center;
-    margin: 15px;
+    margin: var(--margin);
 }
 
 a{
@@ -79,13 +87,13 @@ a{
 }
 
 li{
-    margin: 0px 15px;
+    margin: 0px var(--margin);
     list-style: none;
 }
 
 ul{
 
-    margin:15px;
+    margin:var(--margin);
 }
 
 .button-link{
@@ -98,4 +106,40 @@ ul{
 
 .button-link:hover{
     background-color: var(--background-grad-color);
+}
+
+@media (max-width:576px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (min-width:576px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (min-width:768px) {
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (min-width:992px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1200px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1400px) {
+    html{
+        font-size: 15px;
+    }
 }
