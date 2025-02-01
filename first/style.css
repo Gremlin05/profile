@@ -1,0 +1,101 @@
+:root{
+    --font-family: ;
+    --main-color:#F1F1C6;
+    --button-color:#e03f8c;
+    --background-grad-color: #973150;
+    --adress-color:#b0b0b0;
+    --link-color: white;
+}
+
+@font-face {
+    font-family: "Roboto Flex";
+    src: url(./fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+    src: url(./fonts/Roboto_Flex/static/RobotoFlex-Regular.ttf);
+}
+
+body{
+    margin: 0px;
+    font-family: "Roboto Flex";
+    background-color: var(--main-color) ;
+}
+
+h1,p {
+    margin: 0px;
+}
+
+
+.profile-card{    
+    background-image: url(./img/grad.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 15px;
+    background-color: white;
+    width: 510px;
+    height: 670px;
+}
+
+.container{
+    border-radius: 11%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info{
+    margin-top: 110px;
+}
+
+.icon-box{
+    margin-top: 35px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-image: url(./img/0x1900-000000-80-0-0.jpg);
+    background-position: center;
+    background-size: 175px;
+}
+
+.icon-list{
+    gap: 25px;
+    padding: 0px;
+    display: flex;
+}
+
+.profile-adress{
+    color: var(--adress-color);
+    margin-bottom: 15px;
+}
+
+.profile-description-box.container{
+    width: 350px;
+    text-align: center;
+    margin: 15px;
+}
+
+a{
+    font-family: "Roboto Flex";
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+li{
+    margin: 0px 15px;
+    list-style: none;
+}
+
+ul{
+
+    margin:15px;
+}
+
+.button-link{
+    padding: 15px 25px;
+    font-size: larger;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: var(--button-color);
+}
+
+.button-link:hover{
+    background-color: var(--background-grad-color);
+}
