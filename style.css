@@ -36,7 +36,7 @@ h1,p {
     background-repeat: no-repeat;
     background-size: 35rem;
     margin: auto;
-    margin-top: var(--margin);
+    margin-top: 3rem;
     background-color: white;
     width: var(--profile-card-width);
     height: var(--profile-card-height);
@@ -54,17 +54,17 @@ h1,p {
 }
 
 .icon-box{
-    margin-top: 35px;
+    margin-top: 2.4rem;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
     background-image: url(./img/0x1900-000000-80-0-0.jpg);
     background-position: center;
-    background-size: 175px;
+    background-size: 17rem;
 }
 
 .icon-list{
-    gap: 25px;
+    gap: 1.7rem;
     padding: 0px;
     display: flex;
 }
@@ -99,7 +99,7 @@ ul{
 .button-link{
     padding: 15px 25px;
     font-size: larger;
-    margin: 30px;
+    margin: 2rem;
     border-radius: 15px;
     background-color: var(--button-color);
 }
@@ -112,11 +112,19 @@ ul{
     html{
         font-size: 9px;
     }
+
+    .profile-card{
+        margin-top: 15rem;
+    }
 }
 
 @media (min-width:576px) {
     html{
         font-size: 10px;
+    }
+
+    .profile-card{
+        margin-top: 10rem;
     }
 }
 
@@ -130,16 +138,28 @@ ul{
     html{
         font-size: 12px;
     }
+
+    .profile-card{
+        margin-top: 5rem;
+    }
 }
 
 @media (min-width:1200px) {
     html{
         font-size: 14px;
     }
+
+    .profile-card{
+        margin-top: 4rem;
+    }
 }
 
 @media (min-width:1400px) {
     html{
         font-size: 15px;
+    }
+
+    .profile-card{
+        margin-top: 3rem;
     }
 }
