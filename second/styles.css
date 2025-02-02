@@ -1,0 +1,198 @@
+:root{
+    --background-color:#FFFFFF;
+    --main-color:#1A75FF;
+    --main-dark-color:#1160D7;
+    --discount-color:#AACCFF;
+    --description-color:rgb(0,0,0,0.6);
+
+}
+
+@font-face {
+    font-family: "Meriweather Bold";
+    src: url(./fonts/Merriweather/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family:"Meriweather Regular";
+    src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+body{
+    margin: 0px;
+    font-size: 1.6rem;
+    font-family: "Meriweather Bold";
+}
+
+
+
+:root{
+    font-size: 10px;
+}
+
+ul{
+    display: flex;
+    padding: 0px;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-family:"Meriweather Regular";
+    color: var(--description-color);
+}
+
+p.product-description{
+    font-size: 1.3rem;
+}
+
+.container{
+    margin-top: 3rem;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.product-card{
+    width: 40rem;
+}
+
+.product-image{
+    width: 49rem;
+    height: 63rem;
+}
+
+.product-brand{
+    color: var(--main-color);
+}
+
+.current-price{
+    display: flex;
+    align-items: center;
+}
+
+.product-price-without-discount{
+    text-decoration: line-through;
+    color: gray;
+}
+
+h1.product-price,p.product-price-without-discount{
+    margin: 0px;
+}
+
+.discount{
+    margin-left: 15px;
+}
+
+.product-discount{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: var(--discount-color);
+    color: var(--main-color);
+}
+
+.add-to-bag{
+    font-size: 1.4rem;
+    font-family:"Meriweather Bold";
+    border: none;
+    background-color:var(--main-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    padding: 1rem 15rem;
+    margin-top: 25px;
+
+}
+
+.add-to-bag:hover{
+    background-color: var(--main-dark-color);
+}
+
+.img-list{
+    display: flex;
+    flex-direction:column;
+}
+
+.img-item{
+    width: 8rem;
+    height: 10.4rem;
+}
+
+.img-button{
+    border: none;
+    background: none;
+}
+
+.img-button:hover{
+    opacity: 0.5;
+}
+
+.choose-size{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.size-list{
+    display: flex;
+    gap: 20px;
+}
+
+.size-list input{
+    display: none;
+}
+
+.size-list label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+
+.size-list input:checked + label{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:576px) {
+    :root{
+        font-size: 5px;
+    }
+}
+
+@media (min-width:576px) {
+    :root{
+        font-size: 6px;
+    }
+}
+
+@media (min-width:768px) {
+    :root{
+        font-size: 7px;
+    }
+}
+
+@media (min-width:992px) {
+    :root{
+        font-size: 8px;
+    }
+}
+
+@media (min-width:1200px) {
+    :root{
+        font-size: 9px;
+    }
+}
+
+@media (min-width:1400px) {
+    :root{
+        font-size: 10px;
+    }
+}
+

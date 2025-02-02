@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Покупка товара</title>
+</head>
+<body>
+    <main class="container">
+        <div class="product-images">
+            <ul class="img-list">
+                <li class="img-list-item"><button class="img-button"><img class="img-item" src="./img/first-img.jpg" alt=""></button></li>
+                <li class="img-list-item"><button class="img-button"><img class="img-item" src="./img/first-img.jpg" alt=""></button></li>
+                <li class="img-list-item"><button class="img-button"><img class="img-item" src="./img/first-img.jpg" alt=""></button></li>
+            </ul>
+        </div>
+        <img class="product-image" src="./img/first-img.jpg" alt="">
+        <div class="product-card">
+            <h3 class="product-brand">Polo RalpH </h3>
+            <h1 class="product-name">Custom Fit Polo Bear Oxford Shirt</h1>
+            <p class="product-description">Blue polo with a classic cut. Made of smooth and soft cotton.</p>
+            
+            <div class="price">
+                <div class="current-price">
+                    <h1 class="product-price">$99.00</h1>
+                    <p class="discount"><span class="product-discount">-25%</span></p>
+                </div>                 
+                <p class="product-price-without-discount">$132.00</p>
+            </div>
+            
+            <h3 class="choose-size">Choose size</h3>
+            <div class="size-list">
+                <input type="radio" id="size-s" name="size">
+                <label for="size-s">S</label>
+
+                <input type="radio" id="size-m" name="size">
+                <label for="size-m">M</label>
+
+                <input type="radio" id="size-l" name="size">
+                <label for="size-l">L</label>
+
+                <input type="radio" id="size-xl" name="size">
+                <label for="size-xl">XL</label>
+
+                <input type="radio" id="size-xxl" name="size">
+                <label for="size-xxl">XXL</label>
+            </div>
+
+            <button onclick="addProduct()" class="add-to-bag">ADD TO BAG</button>
+
+        </div>
+    </main>
+
+    <script src="./js/buy.js"></script>
+</body>
+</html>
