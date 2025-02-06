@@ -179,10 +179,6 @@ h1.product-price,p.product-price-without-discount{
     :root{
         font-size: 5px;
     }
-
-    .img-list{
-        flex-direction: row;
-    }
 }
 
 @media (min-width:576px) {
