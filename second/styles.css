@@ -66,6 +66,11 @@ p.product-description{
     height: 63rem;
 }
 
+.product-images{
+    display: flex;
+    display: inline;
+}
+
 .product-brand{
     color: var(--main-color);
 }
@@ -111,12 +116,21 @@ h1.product-price,p.product-price-without-discount{
     background-color: var(--main-dark-color);
 }
 
+
+
 .img-list{
+    width: 8rem;
     display: flex;
-    flex-direction:column;
+    flex-direction: row;
 }
 
 .img-item{
+    
+    width: 8rem;
+    height: 10.4rem;
+}
+
+.img-list-item{
     width: 8rem;
     height: 10.4rem;
 }
@@ -124,6 +138,7 @@ h1.product-price,p.product-price-without-discount{
 .img-button{
     border: none;
     background: none;
+    padding: 0px;
 }
 
 .img-button:hover{
@@ -164,18 +179,26 @@ h1.product-price,p.product-price-without-discount{
     :root{
         font-size: 5px;
     }
+
+    .img-list{
+        flex-direction: row;
+    }
 }
 
 @media (min-width:576px) {
     :root{
         font-size: 6px;
     }
+
+    
 }
 
 @media (min-width:768px) {
     :root{
         font-size: 7px;
     }
+
+    
 }
 
 @media (min-width:992px) {
